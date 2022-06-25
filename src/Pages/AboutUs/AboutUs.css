@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Rammetto+One&display=swap");
+.AboutUs {
+  letter-spacing: 2px;
+  line-height: 30px;
+  color: whitesmoke;
+}
+
+.Relax {
+  font-family: 'Rammetto One', cursive;
+  font-size: 60px;
+  letter-spacing: 8rem;
+  text-align: center;
+  color: whitesmoke;
+}
+/*# sourceMappingURL=AboutUs.css.map */

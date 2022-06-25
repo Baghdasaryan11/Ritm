@@ -1,0 +1,23 @@
+.Link {
+  text-decoration: none;
+  margin: 20px 0;
+  padding: 10px;
+  border: 1px solid whitesmoke;
+  border-radius: 20px;
+  min-width: 100px;
+  text-align: center;
+  color: whitesmoke;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-box-shadow: 0 0 10px;
+          box-shadow: 0 0 10px;
+  font-weight: 500;
+}
+
+.Link:hover {
+  background-color: #8a8686;
+  color: white;
+  font-weight: 500;
+  text-shadow: 0 0 3px;
+}
+/*# sourceMappingURL=Menu.css.map */

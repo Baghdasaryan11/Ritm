@@ -1,0 +1,35 @@
+.CategoryItem_title {
+    text-align: center;
+}
+
+
+.CategoryItem {
+    border: 1px solid red;
+    padding: 10px;
+    display: flex;
+
+    >img {
+        width: 350px;
+    }
+
+    >div {
+        padding-left: 10px;
+        display: flex;
+        flex-direction: column;
+
+        >p,
+        a,
+        span {
+            margin-top: 5px;
+            letter-spacing: 1px;
+            display: flex;
+            align-items: center;
+            color: whitesmoke;
+        }
+    }
+}
+
+.WorkTimes {
+    display: flex;
+    color: whitesmoke;
+}

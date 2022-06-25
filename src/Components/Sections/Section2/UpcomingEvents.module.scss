@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+
+.UpcomingEvents{
+    // border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    
+
+    &> div{
+        width: 40%;
+        // border: 1px solid green;
+        margin: 10px 10px;
+    }
+    &> div:nth-child(2){
+        width: 400px;
+        height: 400px;
+    }
+}
+
+.PlaceDetails{
+    >p{padding: 20px;
+    color: whitesmoke;
+    letter-spacing: 1px;
+    text-indent: -12px;
+    font-family: 'Fredericka the Great', cursive;
+    font-style: italic;
+    }
+    // display: flex;
+
+}
