@@ -1,4 +1,3 @@
-import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -7,10 +6,12 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 import "./Categories.scss";
+import { useNavigate } from "react-router-dom";
 
 // import required modules
 
 export default function CategoriesSlider() {
+  const navigate = useNavigate();
   return (
     <div className='Categories'>
       {/* <p>Find your place</p> */}
@@ -38,12 +39,16 @@ export default function CategoriesSlider() {
         // modules={[Pagination]}
         className='mySwiper'
       >
-        <SwiperSlide>Bars</SwiperSlide>
+        <SwiperSlide onClick={() => navigate("/categories/bars")}>
+          Bars
+        </SwiperSlide>
         <SwiperSlide>Clubs</SwiperSlide>
         <SwiperSlide>Resturants</SwiperSlide>
         <SwiperSlide>Game zone</SwiperSlide>
         <SwiperSlide>Loft</SwiperSlide>
-        <SwiperSlide>beer house</SwiperSlide>
+        <SwiperSlide onClick={() => navigate("categories/beer-house")}>
+          Beer house
+        </SwiperSlide>
         <SwiperSlide>Pub</SwiperSlide>
         <SwiperSlide>Romantic</SwiperSlide>
         <SwiperSlide>Events</SwiperSlide>

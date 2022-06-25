@@ -8,7 +8,9 @@ import { useParams } from "react-router-dom";
 import "./CategoryItem.scss";
 
 import { CategoriesData } from "../../assets/Content/Categories";
-
+import CategoryItemSlider from "../../Ui/Sliders/CategoryItemSlider";
+import UpcomingEventsSlider from "../../Ui/Sliders/UpcomingEventsSlider";
+import { UPCOMING_EVENTS } from "../../assets/Content/Categories";
 const CategoryItem = () => {
   const { id, type } = useParams<string>();
 
@@ -18,58 +20,64 @@ const CategoryItem = () => {
   const wt = item.workTime;
 
   return (
-    <Container maxWidth='lg'>
-      <h1 className='CategoryItem_title'>{item.name}</h1>
-      <div className='CategoryItem'>
-        <img src={item.img} alt={item.name} />
-        <div>
-          <a
-            href={`http://maps.google.com/?q=1200 ${item.address}`}
-            rel='noreferrer'
-            target='blank'
-          >
-            <LocationOnIcon />
-            {item.address}
-          </a>
-          <p>{item.desc}</p>
-          <a href={`mailto:${item.email}`} rel='noreferrer'>
-            {item.email && <MailOutlineTwoToneIcon />}
-            {item.email}
-          </a>
-          <a href={`tel:${item.phone}`} rel='noreferrer'>
-            <PhoneIphoneIcon />
-            {item.phone}
-          </a>
-          <span>
+    <>
+      <Container maxWidth='lg'>
+        <h1 className='CategoryItem_title'>{item.name}</h1>
+        <div className='CategoryItem'>
+          {/* <img src={item.img} alt={item.name} /> */}
+          <CategoryItemSlider images={item.img} />
+          <div>
             <a
-              href={item.socialLinks?.facebook}
+              href={`http://maps.google.com/?q=1200 ${item.address}`}
               rel='noreferrer'
               target='blank'
             >
-              {item.socialLinks?.facebook && <FacebookIcon fontSize='large' />}
+              <LocationOnIcon />
+              {item.address}
             </a>
-            <a
-              href={item.socialLinks?.instagram}
-              rel='noreferrer'
-              target='blank'
-            >
-              {item.socialLinks?.instagram && (
-                <InstagramIcon fontSize='large' />
-              )}
+            <p>{item.desc}</p>
+            <a href={`mailto:${item.email}`} rel='noreferrer'>
+              {item.email && <MailOutlineTwoToneIcon />}
+              {item.email}
             </a>
-          </span>
+            <a href={`tel:${item.phone}`} rel='noreferrer'>
+              <PhoneIphoneIcon />
+              {item.phone}
+            </a>
+            <span>
+              <a
+                href={item.socialLinks?.facebook}
+                rel='noreferrer'
+                target='blank'
+              >
+                {item.socialLinks?.facebook && (
+                  <FacebookIcon fontSize='large' />
+                )}
+              </a>
+              <a
+                href={item.socialLinks?.instagram}
+                rel='noreferrer'
+                target='blank'
+              >
+                {item.socialLinks?.instagram && (
+                  <InstagramIcon fontSize='large' />
+                )}
+              </a>
+            </span>
 
-          {wt &&
-            Object.keys(wt).map((item: string) => {
-              return (
-                <div className='WorkTimes' key={item}>
-                  <p>{item}</p>&nbsp; - &nbsp;<span>{wt[item]}</span>
-                </div>
-              );
-            })}
+            {wt &&
+              Object.keys(wt).map((item: string) => {
+                return (
+                  <div className='WorkTimes' key={item}>
+                    <p>{item}</p>&nbsp; - &nbsp;<span>{wt[item]}</span>
+                  </div>
+                );
+              })}
+          </div>
         </div>
-      </div>
-    </Container>
+      </Container>
+      <UpcomingEventsSlider events={UPCOMING_EVENTS} />
+    </>
   );
 };
 

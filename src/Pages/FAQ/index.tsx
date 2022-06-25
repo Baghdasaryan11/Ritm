@@ -2,14 +2,7 @@ import { Container } from "@mui/material";
 import "./FAQ.scss";
 const FAQ = () => {
   return (
-    <Container
-      maxWidth='lg'
-      sx={
-        {
-          // border: "1px solid red",
-        }
-      }
-    >
+    <Container maxWidth='lg'>
       <h1>Frequently asked question</h1>
 
       <div className='Question-block'>

@@ -12,8 +12,6 @@ const Item = styled(Paper)(({ theme }) => ({
   textAlign: "center",
   color: theme.palette.text.secondary,
   cursor: "pointer",
-  //   height: 200,
-  //   display: "inline-block",
 }));
 
 const Category = () => {
@@ -37,7 +35,7 @@ const Category = () => {
             return (
               <Grid item xs={3} sm={3} md={3} key={item.id}>
                 <Item onClick={() => navigate(String(item.id))}>
-                  <img src={item.img} alt={item.name} width='100%' />
+                  <img src={item.img[0]} alt={item.name} width='100%' />
                   <h3>{item.name}</h3>
                 </Item>
               </Grid>

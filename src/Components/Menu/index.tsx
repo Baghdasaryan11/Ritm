@@ -1,6 +1,6 @@
 import { Box, Drawer } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./Menu.scss";
 
 interface IMenuProps {

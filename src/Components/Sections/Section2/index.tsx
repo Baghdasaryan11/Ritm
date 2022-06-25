@@ -25,7 +25,6 @@ const UpcomingEvents = () => {
           onChange={handleChange("panel1")}
           sx={{
             backgroundColor: "rgba(14, 11, 15, 0.842)",
-            // border: "1px solid whitesmoke",
             margin: "3px 0",
             borderRadius: "10px !important",
           }}
@@ -69,7 +68,6 @@ const UpcomingEvents = () => {
           onChange={handleChange("panel2")}
           sx={{
             backgroundColor: "rgba(14, 11, 15, 0.842)",
-            // border: "1px solid whitesmoke",
             margin: "3px 0",
             borderRadius: "10px !important",
           }}
@@ -114,7 +112,6 @@ const UpcomingEvents = () => {
           sx={{
             backgroundColor: "rgba(14, 11, 15, 0.842)",
             borderRadius: "10px !important",
-            // border: "1px solid whitesmoke",
             margin: "3px 0",
           }}
         >
@@ -157,7 +154,6 @@ const UpcomingEvents = () => {
           onChange={handleChange("panel4")}
           sx={{
             backgroundColor: "rgba(14, 11, 15, 0.842)",
-            // border: "1px solid whitesmoke",
             margin: "3px 0",
             borderRadius: "10px !important",
           }}

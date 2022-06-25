@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAGA,AAEI,sBAFkB,GAEjB,GAAG,CAAC;EAED,MAAM,EAAE,MAAM;CAEjB;;AANL,AAQI,sBARkB,GAQjB,GAAG,GAAC,CAAC,CAAC;EACH,cAAc,EAAE,GAAG;EACnB,OAAO,EAAE,IAAI;EACb,UAAU,EAAE,IAAI;EAChB,cAAc,EAAE,aAAa;CAChC",
-    "sources": [
-        "Cooperate.scss"
-    ],
-    "names": [],
-    "file": "Cooperate.css"
-}

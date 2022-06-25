@@ -4,7 +4,7 @@ import "./Cooperate.scss";
 
 const Cooperate = () => {
   return (
-    <Container maxWidth='lg' sx={{ border: "1px solid red" }}>
+    <Container maxWidth='lg'>
       <h1>Cooperate Page</h1>
 
       <section className='Cooperate_description'>

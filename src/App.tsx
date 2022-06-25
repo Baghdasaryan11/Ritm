@@ -1,11 +1,13 @@
 import "./App.scss";
 import AppRouter from "./Components/AppRouter";
 import Footer from "./Components/Footer";
-import UpcomingEvents from "./Components/Sections/Section2";
 import Topbar from "./Components/Topbar";
-import CategoriesSlider from "./Ui/Sliders/Categories";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function App() {
+  AOS.init();
+
   return (
     <div className='App'>
       <Topbar />
